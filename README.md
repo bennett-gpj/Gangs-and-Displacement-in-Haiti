@@ -3,12 +3,12 @@
 
 ## Find my page here. __URL__
 
-I sought to analyze the data from the International Organization for Migration's assesment of the displacement caused by insecurity and gangs in the Haitian capital of Port-au-Prince. The angles I sought to explore are as follows:
+I sought to analyze the data from the International Organization for Migration's assesment of the displacement caused by insecurity and gangs in the Haitian capital of Port-au-Prince. That data, from March 2023, can be found here (https://data.humdata.org/dataset/haiti-displacement-idps-baseline-assessment-iom-dtm/resource/00acbb24-2a1c-4b14-9a2d-7217f6c37d81). I then overlaid that data with ________.
+
+__Questions I explored:__
 - The number of IDPs / IDPs per commune/neighborhood (hbars)
-- Where did the IDPs come from? When?
 - Site types (spontaneous or host communities) (donut)
-- Who owns the land of the sites (non host communities)?
-- Average people per sq meter at sites
+- Where did the IDPs come from? 
 - How many people over 60? Under 18?
 - How many sites are inaccessible?
 - Is there tension between the host community and the IDPs?
@@ -16,17 +16,20 @@ I sought to analyze the data from the International Organization for Migration's
 - Do the IDPs have identification?
 - Cholera deaths. Fear of cholera vaccine.
 
-Findings: __________
+__Findings:__ __________
 
-Data collection methods:
+__Data collection methods:__
 - IOM included data from 459 IDP sites and host communities during their visit in February and March 2023; however, 172 of these entries had very little to no data, so I removed them from my analysis. This left 287 sites to analyze.
 - 
 
-Skills I learned:
+__Skills I learned:__
 - I learned how to auto-translate cells in Google Sheets, which I used to translate the original data from French to English.
 - 
 
-If I had more time, _______________.
+__If I had more time, I would explore:__
+- When were people displaced? What were the most common days/months of displacement?
+- Average people per square meter at sites
+- 
 
 ### Contact
 
