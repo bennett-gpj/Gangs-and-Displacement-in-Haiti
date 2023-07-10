@@ -1,9 +1,8 @@
-# Gangs and Displacement in Haiti
- Displacement in Port-au-Prince
+# Gangs and Displacement in Port-au-Prince, Haiti
 
 ## Find my page here. https://bennett-gpj.github.io/Gangs-and-Displacement-in-Haiti/
 
-I sought to analyze the data from the International Organization for Migration's assesment of the displacement caused by insecurity and gangs in the Haitian capital of Port-au-Prince. That data, from March 2023, can be found here (https://data.humdata.org/dataset/haiti-displacement-idps-baseline-assessment-iom-dtm/resource/00acbb24-2a1c-4b14-9a2d-7217f6c37d81). I then overlaid that data with ________.
+I sought to analyze the data from the International Organization for Migration's assesment of the displacement caused by insecurity and gangs in the Haitian capital of Port-au-Prince. That data, from March 2023, can be found here (https://data.humdata.org/dataset/haiti-displacement-idps-baseline-assessment-iom-dtm/resource/00acbb24-2a1c-4b14-9a2d-7217f6c37d81).
 
 __Questions I explored:__
 - The number of IDPs / IDPs per commune/neighborhood
@@ -16,7 +15,17 @@ __Questions I explored:__
 - Do the IDPs have identification?
 - Cholera deaths among IDPs
 
-__Findings:__ __________
+__Findings:__
+- Over 127,000 IDPs were counted by IOM in Feb and March 2023
+- The areas known as 6th Turgeau and 2nd Varreux (Canaan - Jerusalem) saw the largest waves of out-migration due to gang violence since 2020.
+- Most displaced people are seeking shelter in the commune of Port-au-Prince, followed by Delmas and Cité Soleil.
+- About 82% of the sites visited by IOM are what are "host communities."
+- Half of the IDPs are children (27,773 boys and 36,131 girls). People over the age of 60 made up just 6% of the displaced population.
+- Tension exists between the IDPs and their hosts in about a quarter of host communities (55 sites).
+- Obout 5% of sites had received food, health or cash assistance, while 4% received water and sanitation aid and less than 1% received education or psychosocial assistance.
+- Humanitarian workers can access these displacement sites about 81% of the time. In the cases when the sites aren't accessible, 60% of the time it's due to physical constraints; 40% of the time it's due to insecurity.
+- In about 39% of the IDP sites, the majority of displaced persons don't have personal identification documents.
+- At least 590 people in these displaced camps have died from cholera.
 
 __Data collection methods:__
 - IOM included data from 459 IDP sites and host communities during their visit in February and March 2023; however, 172 of these entries had very little to no data, so I removed them from my analysis. This left 287 sites to analyze. Analysis was done with Python in Jupyter Notebook.
