@@ -1,165 +1,237 @@
-<!DOCTYPE html>
-<html>
+
+<!doctype html>
+<html class="no-js" lang="">
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Displacement in Haiti</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Gangs-and-Displacement-in-Haiti</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="how-to-make-a-story">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">  
+
   <style>
-    .byline {
-      font-size: 0.8em;
-      color: #888;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .section {
-      padding: 2rem 1.5rem;
-    }
-    h1.title {
-      margin-bottom: 1rem;
-    }
-    h3 {
-      margin-top: 2rem;
-    }
-    h6 {
-      margin-top: 1.5rem;
-    }
-    blockquote {
-      margin: 1rem 0;
-      padding: 1rem;
-      background-color: #f5f5f5;
-    }
-    .chart-container {
-      max-width: 1000px;
-      width: 100%;
-      margin: 0 auto;
-    }
     body {
-      max-width: 800px;
-      margin: 0 auto;
+      font-family: 'Poppins', sans-serif;
+      color: #1d1d1d;
     }
+
+    .font-secondary {
+      font-family: 'Lora', serif !important;
+    }
+
+    .text-h2 {
+      font-size: 36px;
+      line-height: 52px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 32px;
+        line-height: 48px;
+      }
+    }
+
+    .text-h3 {
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: 500;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+
+    .text-body-1 {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 32px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    .text-body-2 {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    .blockquote {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      text-transform: uppercase;
+      text-align: center;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 28px;
+      }  
+    }
+
+    .text-caption {
+      font-size: 14px;
+      line-height: 22px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 12px;
+        line-height: 18px; 
+      }
+    }
+
+    .text-overline {
+      font-size: 10px;
+      line-height: 16px;
+
+      @media (min-width: @screen-sm-min) {
+        font-size: 10px;
+        line-height: 16px; 
+      }
+    }
+
+    a, li > a {
+      color: #E9E2DA !important;
+      border-bottom: 2px solid #E9E2DA;
+      text-decoration: none;
+      word-break: break-word;
+    }
+
+    .container.landing {
+      padding: 96px 20px; /* Increase or decrease the padding values here */
+      max-width: 960px; /* Add this line to limit the maximum width */
+      margin: 0 auto; /* Add this line to center the container */    }
+
+    /* Style for flourish iframe */
+    iframe.flourish-iframe {
+      width: 100%;
+      height: auto;
+      border: unset;
+    }
+
+    /* Small devices (tablets, 768px and up) */
+    /* @media (min-width: @screen-sm-min) { ... } */
+
+    /* Medium devices (desktops, 992px and up) */
+    /* @media (min-width: @screen-md-min) { ... } */
+
+    /* Large devices (large desktops, 1200px and up) */
+    /* @media (min-width: @screen-lg-min) { ... } */
   </style>
 </head>
 <body>
-  <div class="section">
-    <div class="container content">
-      <h1 class="title">Forced displacement in Port-au-Prince, Haiti</h1>
-      <p class="byline">Bennett Hanson</p>
-      <p>I analyzed the data from the International Organization for Migration's assesment of the displacement caused by insecurity and gangs in the Haitian capital of Port-au-Prince. That data, from March 2023, can be found here <a href="https://data.humdata.org/dataset/haiti-displacement-idps-baseline-assessment-iom-dtm/resource/00acbb24-2a1c-4b14-9a2d-7217f6c37d81">here</a>. I then contrast that data with ________.</p>
-      <p>To read more about this project, see the <a href="https://github.com/bennett-gpj/Gangs-and-Displacement-in-Haiti">Github page</a>.</p>
+  <div id="root">
+    <div class="container landing">
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-11">
+            <h3 class="text-h3 font-secondary mb-3" style="text-align: center;"> Threat to <del>Democracy</del>? How Brazilian Politicians Approached January 8th on Twitter</h3>
+            <body class="text-h4 font-secondary mb-3" style="font-size: 18px; text-align: center;">Only 32% of the tweets published by parliamentarians on the day of the attacks mentioned their consequences for Brazilian democratic system</body>
+            <p class="text-h4 font-secondary mb-3" style="font-size: 14px; text-align: center; margin-top: 15px;">By Rafaela Sinderski</p>
 
-    <h1 class="title">Seeking refuge from gangs</h1>
+            <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+                <img src="https://imagens.ebc.com.br/_CvzgbuTjKsyIppRW_EnOx9DJH8=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/_ja_9173.jpg?itok=qrhQw7gC" style="width: 150%; max-width: 1500px;" alt="placeholder" class="mb-5 py-2" /> 
+                <p class="text-caption mb-5 text-center" style="font-size: 10px">Photo: Joedson Alves/Agencia Brasil</p>
+              </div>  
+              
+              <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left">
+                On January 8, 2023, more than <b> 4,000 Brazilian citizens </b> invaded and destroyed the administrative buildings of the federal government in the country's capital, Brasília. The headquarters of the Executive, Legislative, and Judiciary branches were attacked by the crowd that did not accept the results of the 2022 presidential elections.
+              </p> 
+              <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left">
+                These acts were the culmination of a series of political demonstrations that took over the country since last October, when the far-right former president Jair Bolsonaro (PL) lost the electoral race to the leftist candidate Luiz Inácio Lula da Silva (PT). 
+                The results reflected the polarized political landscape: Lula had a narrow victory with <b>50.8% of the valid votes</b>, leading him to his third term as Brazil’s president and causing the wave of violent and anti-democratic outbreaks.
+            </p>
+            <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left">
+                As the episodes unfolded, many political actors used their Twitter profiles to comment on the attacks. 
+                Lula <a href="https://twitter.com/LulaOficial/status/1612191803901444098">published a thread</a> criticizing the Institutional Security Office's performance in protecting government facilities and promising to punish the "financiers of those who went to Brasília."
+                Bolsonaro, on the other hand, used Twitter to criticize Brazil's current president and the supporters of the political left-wing. He also <a href="https://twitter.com/jairbolsonaro/status/1612242022143762433">denied his connection to and influence</a> on the anti-democratic events.
+            </p>
 
-    <iframe title="Armed group presence by province" aria-label="Stacked Bars" id="datawrapper-chart-Liru2" src="https://datawrapper.dwcdn.net/Liru2/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="306" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-    </script>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet">
+                <p lang="pt" dir="ltr">- Manifestações pacíficas, na forma da lei, fazem parte da democracia. Contudo, depredações e invasões de prédios públicos como ocorridos no dia de hoje, assim como os praticados pela esquerda em 2013 e 2017, fogem à regra.</p>
+                &mdash; Jair M. Bolsonaro (@jairbolsonaro) <a href="https://twitter.com/jairbolsonaro/status/1612242019564548097?ref_src=twsrc%5Etfw">January 9, 2023</a>
+              </blockquote>
+              <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left; font-size: 13px;">
+                <i>(Peaceful political demonstrations, in the form of the law, are part of democracy. However, depredations and invasions of public buildings as occurred today, just like those practiced by the left in 2013 and 2017, escape the rule.)</i>
+            </p>
 
-    <br />
-    <br />
+            <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left;">
+              The former president's speech echoed among some of his supporters within the Brazilian National Congress; they reproduced the defensive posture and the attempt to transfer responsibility to other political groups.
+              However, this was not the general tone adopted in the messages published on January 8th. The word cloud below shows that the tone of repudiation prevailed among parliamentarians – from House of Representatives and Senate – who had active Twitter accounts on the day of the attacks. 
+              "Vandalism" and "terrorism" were widely used to describe the events.
+          </p>
 
-    <strong>What are the most common armed groups seen at these mines?</strong>
+          <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+            <img src="img/wordcloud.png" style="width: 100%; max-width: 1500px;" alt="placeholder" class="mb-5 py-2" />
+          </div>
+          <p class="text-caption mb-5 text-center">The word cloud is based on 444 tweets published by Brazilian National Congress members on January 8th.</p>
 
-    <br />
-    <br />
-    
-    <iframe title="10 most common armed groups at DRC mines" aria-label="Bar Chart" id="datawrapper-chart-fAqfM" src="https://datawrapper.dwcdn.net/fAqfM/1/" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="332" data-external="1"></iframe>
+          <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left;">
+            There are minimal differences in the use of terms considering the political group to which parliamentarians belong – on the right, in the center, or on the left of the political-ideological spectrum.
+          </p>
 
-    <br />
-    <br />
+          <h5 class="text-h3 font-secondary mb-3" style="text-align: left; font-size: 22px;">To the left: focus on 'terrorism'</h5>
+          <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left;">
+            Politicians aligned with the left wing have used the word "terrorist" extensively to refer to January 8th. 
+            Their tweets also mentioned Jair Bolsonaro and his supporters (called "bolsonaristas") more frequently, seeking to hold the former president responsible for the attacks on the federal capital.
+          </p>
 
-    <strong>It seems like the national army and the police are the most common armed groups present at the mines. How often does the reported armed group belong to a state agency like the army, the police, or the mining police?</strong>
+          <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+            <img src="img/wordcloud_left.png" style="width: 100%; max-width: 1500px;" alt="placeholder" class="mb-5 py-2" />
+          </div>
+          <p class="text-caption mb-5 text-center">Word cloud made with tweets from leftist politicians..</p>
 
-    <br />
+          <h5 class="text-h3 font-secondary mb-3" style="text-align: left; font-size: 22px;">To the right: vandals with no names</h5>
+          <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left;">
+            Parliamentarians who identify with the political right wing preferred "vandalism" to "terrorism" when discussing the anti-democratic acts. 
+            They did not mention the far-right former ruler or his "bolsonaristas" followers. 
+            Even though they repudiated the violence that took Brasília by storm, they talk about punishment in a more generic and non-directed way.
+          </p>
 
-    <p>According to my analysis of the data, when there is an armed presence at a mine, 71% of the time, it's the army or the police.</p>
+          <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+            <img src="img/wordcloud_right.png" style="width: 100%; max-width: 1500px;" alt="placeholder" class="mb-5 py-2" />
+          </div>
 
-    <strong>Why is this? What's going on?</strong>
+          <p class="text-caption mb-5 text-center">Word cloud made with tweets from right wing politicians.</p>
 
-    <br />
-    
-    <p>The U.S. Department of State's 2022 report on human rights in DRC provides some insight:</p>
+          <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left;">
+            Politicians at the center of the spectrum behaved more closely to right wing parliamentarians, using the term "vandalism" and avoiding mentioning political actors and supporters by name.
+          </p>
 
-    <blockquote>
-      "Artisanal mining remained predominantly informal, illicit, and strongly linked to both armed groups and certain elements of the FARDC [the army]. Government officials were often complicit in the smuggling of artisanal mining products, particularly gold, into Uganda and Rwanda. The law prohibits the FARDC from engaging in mineral trade, but the government did not effectively enforce the law. Criminal involvement by some FARDC units and armed groups included protection rackets, extortion, and theft. The illegal trade in minerals was both a symptom and a cause of weak governance. It illegally financed armed groups and individual elements of the SSF [state security forces] and sometimes generated revenue for traditional authorities and local and provincial governments. A June report by the UN Group of Experts reported that FARDC members trafficked and profited from untagged coltan in North Kivu Province and illegally mined and taxed gold in Ituri Province. Individual FARDC commanders also sometimes appointed civilians to manage their interests at mining sites covertly."
-    
-      <br />
-      <br />
+          <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+            <img src="img/wordcloud_center.png" style="width: 100%; max-width: 1500px;" alt="placeholder" class="mb-5 py-2" />
+          </div>
 
-      Source: <a href="https://www.state.gov/wp-content/uploads/2023/03/415610_CONGO-DEM-REP-2022-HUMAN-RIGHTS-REPORT.pdf">U.S. Department of State, 2022</a>
-    </blockquote>
+          <p class="text-caption mb-5 text-center">Word cloud made with tweets from politicians at the center of the political-ideological spectrum.</p>
 
-    <br />
+          <p class="text-body-2 mb-4" style="margin-top: 20px; text-align: left;">
+            Although "democracy" is a term present in the word clouds, the lexical analysis made from the tweets of Brazilian Congress members revealed that only 32% of their publications on January 8th mentioned the term. 
+            In addition, the discussion about the impacts of January 8th on Brazilian democracy dropped drastically in the days that followed the attacks, as shown in the line chart below.
+          </p>
 
-    <strong>Are state forces (FARDC, PNC or PMH) ever present alongside a local armed group?</strong>
+          <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-top: 20px;">
+            <img src="img/linechart.png" style="width: 100%; max-width: 1500px;" alt="placeholder" class="mb-5 py-2" />
+          </div>
 
-    <br />
+          </p>         
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <p>Yes, at just three mines. The army (FARDC) was seen alongside Maï-Maï Malaika at both the Yovoti and Bizola gold mines in Maniema province, and alongside the UPLC at the Mazembe gold mine in North Kivu province.</p>
-  
-    <strong>Ok, so there's lots of armed groups and they include corrupt state elements like the army. But what are they mining?</strong>
-
-    <br />
-    <br />
-
-    <iframe title="What is being mined in DRC?" aria-label="Donut Chart" id="datawrapper-chart-pnXBu" src="https://datawrapper.dwcdn.net/pnXBu/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="482" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-    </script>
-
-    <br />
-
-    <p>Analysis shows 77% of the mines are gold, 16% are cassiterite (tin), 5% are coltan, 1% are wolframite and there are a few other mixed mines.</p>
-
-    <strong>Do armed groups have more interest in a particular mineral?</strong>
-
-    <br />
-    <br />
-
-    <iframe title="Mines where armed group are present" aria-label="Donut Chart" id="datawrapper-chart-SAjGU" src="https://datawrapper.dwcdn.net/SAjGU/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="525" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-    </script>
-
-    <br />
-    <br />
-
-    <p>As the ratio of gold mines increased, it seems that armed groups have a slight preference for gold mines. </p>
-
-<h1 class="title">Mercury usage</h1>
-
-    <strong>IPIS also recorded when mercury was used at a mining site, which has an extremely harmful impact on the miners and on the surrounding environment. Where is mercury most likely to be used?</strong>
-
-    <br />
-
-    <p>According to my analysis, mercury was used at about 39% of gold mines and 2% of cassiterite mines.</p>
-
-    <strong>If mercury is primarily used in gold mining, which provinces have the most gold mines?</strong>
-
-    <br />
-    <br />
-
-    <iframe title="Number of gold mines by province" aria-label="Bar Chart" id="datawrapper-chart-MSnwB" src="https://datawrapper.dwcdn.net/MSnwB/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="286" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-    </script>
-
-    <br />
-    <br />
-
-    <p>South Kivu, North Kivu, Ituri and Maniema provinces, respectively, have the most gold mines.</p>
-
-    <strong>Does the use of mercury follow that pattern (is it most common in South Kivu, North Kivu, Ituri and Maniema, respectively)?</strong>
-
-    <br />
-    <br />
-
-    <iframe title="Provincial breakdown of mercury use" aria-label="Bar Chart" id="datawrapper-chart-6xFhP" src="https://datawrapper.dwcdn.net/6xFhP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="286" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-    </script>
-
-    <br />
-    <br />
-
-    <p>Our last question was, does the use of mercury align with the distribution of gold mines? Interestingly, because Ituri and Maniema provinces jumped ahead in the previous graph, we can conclude that mercury is disproportionately used in those two provinces.</p>
-    
-    <br />
-
-</div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+  <script src="https://public.flourish.studio/resources/embed.js"></script>
 </body>
 </html>

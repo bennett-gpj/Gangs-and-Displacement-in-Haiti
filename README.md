@@ -1,7 +1,7 @@
 # Gangs and Displacement in Haiti
  Displacement in Port-au-Prince
 
-## Find my page here. __URL__
+## Find my page here. https://bennett-gpj.github.io/Gangs-and-Displacement-in-Haiti/
 
 I sought to analyze the data from the International Organization for Migration's assesment of the displacement caused by insecurity and gangs in the Haitian capital of Port-au-Prince. That data, from March 2023, can be found here (https://data.humdata.org/dataset/haiti-displacement-idps-baseline-assessment-iom-dtm/resource/00acbb24-2a1c-4b14-9a2d-7217f6c37d81). I then overlaid that data with ________.
 
