@@ -35,6 +35,8 @@ __If I had more time, I would explore:__
 - Average people per square meter at sites
 - A map of where IDP sites are located
 - How to make and effectively display a map showing the gangland territories
+- Change the names of the locations on the interactive Datawrapper chart from French to English
+- Change the Google Maps embed to a fancier interactive map
 
 ### Contact
 

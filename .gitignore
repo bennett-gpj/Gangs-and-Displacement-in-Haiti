@@ -2,13 +2,19 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=osx,visualstudiocode,python
 
 # Extra files
-round-3-zmpp-dataset_public-hdx2.xlsx
 municipality_origins.csv
 municipal_section_origins.csv
 HT ADM4.csv
 HT ADM4 origins.csv
 district_origins.csv
 json files
+accessibility_counts.csv
+aid_percentages.csv
+idp_counts_by_adm4.csv
+commune_idp_counts.csv
+idp_breakdown.csv
+idp_percentage_breakdown.csv
+site_type_counts.csv
 
 ### OSX ###
 # General
